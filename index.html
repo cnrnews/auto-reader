@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./auto_reader.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      /**
+       小说自动阅读器插件
+       配置项:
+       1. playBtn -> 播放与暂停
+       2. sTopBtn -> 回到顶部按钮
+       3. playImg -> 播放图标
+       4. pauseImg -> 暂停图标
+      **/
+      var autoReader = new AutoReader({
+        playBtn: document.getElementsByClassName('play-btn')[0],
+        sTopBtn: document.getElementsByClassName('s-top-btn')[0],
+        playImg: 'img/play.png',
+        pauseImg: 'img/pause.png',
+      })
+    </script>
+  </body>
+</html>
